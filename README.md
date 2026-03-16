@@ -2,7 +2,7 @@
 
 > Multichat de Twitch y Kick integrado en VSCode para streamers de programación.
 
-![VSCode](https://img.shields.io/badge/VSCode-^1.80.0-blue) ![Twitch](https://img.shields.io/badge/Twitch-integrado-9146ff) ![Kick](https://img.shields.io/badge/Kick-integrado-53fc18)
+![VSCodeOffline](./img/offline.webp) ![VSCodeOnline](./img/online.webp)
 
 ---
 

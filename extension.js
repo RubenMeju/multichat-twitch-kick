@@ -106,7 +106,7 @@ function getWebviewContent() {
 <body>
   <div id="header">
     <span id="channel">mejudev</span>
-    <span id="viewers">⚫ OFFLINE</span>
+    <span id="viewers">⚫ ONLINE</span>
   </div>
   <div id="messages"></div>
   <div id="status">Conectando...</div>
