@@ -20,3 +20,5 @@ Thumbs.db
 # Build outputs
 dist/
 out/
+
+.vscode/settings.json

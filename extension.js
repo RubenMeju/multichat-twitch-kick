@@ -5,6 +5,7 @@ const CLIENT_ID = config.get("clientId");
 const CLIENT_SECRET = config.get("clientSecret");
 const CHANNEL = config.get("channel");
 const WS_URL = config.get("serverUrl");
+const HIGHLIGHT_URL = config.get("highlightUrl");
 function fetchViewers() {
   return new Promise((resolve) => {
     const tokenReq = https.request(
@@ -246,9 +247,11 @@ function getWebviewContent() {
 }
 
 function sendHighlight(data) {
-  console.log("sendHighlight data:", data);
   const body = JSON.stringify(data);
-  const url = new URL("https://twitch-a7sp.onrender.com/highlight");
+
+  const base = WS_URL.replace("wss://", "https://").replace("ws://", "http://");
+
+  const url = new URL(base + "/highlight");
   const req = https.request(
     {
       hostname: url.hostname,

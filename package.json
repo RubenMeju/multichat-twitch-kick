@@ -15,6 +15,10 @@
     "onStartupFinished"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RubenMeju/multichat-twitch-kick"
+  },
   "contributes": {
     "views": {
       "explorer": [
