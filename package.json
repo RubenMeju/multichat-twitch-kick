@@ -1,0 +1,51 @@
+{
+  "name": "twitch-mejudev",
+  "displayName": "Twitch mejudev",
+  "description": "Chat y viewers de Twitch integrado en VSCode",
+  "version": "0.0.9",
+  "publisher": "mejudev",
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "twitch-mejudev.chat",
+          "name": "💬 Twitch Chat",
+          "icon": "icon.png"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Twitch mejudev",
+      "properties": {
+        "twitch-mejudev.clientId": {
+          "type": "string",
+          "description": "Tu Twitch Client ID (dev.twitch.tv)"
+        },
+        "twitch-mejudev.clientSecret": {
+          "type": "string",
+          "description": "Tu Twitch Client Secret (dev.twitch.tv)"
+        },
+        "twitch-mejudev.channel": {
+          "type": "string",
+          "description": "Tu canal de Twitch (ej: mejudev)"
+        },
+        "twitch-mejudev.serverUrl": {
+          "type": "string",
+          "description": "URL de tu servidor WebSocket (ej: wss://tu-app.onrender.com)"
+        }
+      }
+    }
+  }
+}
