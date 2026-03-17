@@ -21,9 +21,14 @@
 Antes de instalar necesitas tener:
 
 1. **Una app de Twitch** — Créala en [dev.twitch.tv](https://dev.twitch.tv/console/apps)
-2. **Un servidor WebSocket** compatible — Esta extensión está diseñada para funcionar con [twitch-overlay-server](https://github.com/RubenMeju) o cualquier servidor que emita eventos WebSocket del tipo `chat-message` y acepte POST en `/highlight`
+2. **Un servidor WebSocket** compatible — Esta extensión está diseñada para funcionar con [stream-server](https://github.com/RubenMeju/stream-server) o cualquier servidor que emita eventos WebSocket del tipo `chat-message` y acepte POST en `/highlight`
+3. **Extensión opcional de telemetría para VSCode** —  
+   Permite enviar datos del editor al servidor en tiempo real.
 
----
+   Repositorio:  
+   https://github.com/RubenMeju/stream-bridge-vscode
+
+   Requiere que el servidor tenga el endpoint `POST /vscode`.
 
 ## Instalación
 
@@ -36,7 +41,7 @@ Antes de instalar necesitas tener:
 
 ## Configuración
 
-Tras instalar, abre la configuración de VSCode (`Ctrl+,`) y busca **"twitch-mejudev"**. Debes rellenar estos cuatro campos:
+Después de instalar la extensión, configura los siguientes campos en VSCode (`Ctrl+,`) y busca **"Stream"**. Debes rellenar estos cuatro campos:
 
 | Campo          | Descripción                         | Ejemplo                     |
 | -------------- | ----------------------------------- | --------------------------- |

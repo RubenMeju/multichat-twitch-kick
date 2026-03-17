@@ -1,8 +1,8 @@
 {
-  "name": "twitch-mejudev",
+  "name": "stream-chat-vscode",
   "displayName": "Twitch mejudev",
   "description": "Chat y viewers de Twitch integrado en VSCode",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "publisher": "mejudev",
   "icon": "icon.png",
   "engines": {
@@ -17,14 +17,14 @@
   "main": "./extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RubenMeju/multichat-twitch-kick"
+    "url": "https://github.com/RubenMeju/stream-chat-vscode"
   },
   "contributes": {
     "views": {
       "explorer": [
         {
           "type": "webview",
-          "id": "twitch-mejudev.chat",
+          "id": "stream-chat-vscode.chat",
           "name": "💬 Twitch Chat",
           "icon": "icon.png"
         }
@@ -33,19 +33,19 @@
     "configuration": {
       "title": "Twitch mejudev",
       "properties": {
-        "twitch-mejudev.clientId": {
+        "stream-chat-vscode.clientId": {
           "type": "string",
           "description": "Tu Twitch Client ID (dev.twitch.tv)"
         },
-        "twitch-mejudev.clientSecret": {
+        "stream-chat-vscode.clientSecret": {
           "type": "string",
           "description": "Tu Twitch Client Secret (dev.twitch.tv)"
         },
-        "twitch-mejudev.channel": {
+        "stream-chat-vscode.channel": {
           "type": "string",
           "description": "Tu canal de Twitch (ej: mejudev)"
         },
-        "twitch-mejudev.serverUrl": {
+        "stream-chat-vscode.serverUrl": {
           "type": "string",
           "description": "URL de tu servidor WebSocket (ej: wss://tu-app.onrender.com)"
         }

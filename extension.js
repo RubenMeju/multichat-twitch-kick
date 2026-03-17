@@ -251,7 +251,7 @@ function sendHighlight(data) {
 
   const base = WS_URL.replace("wss://", "https://").replace("ws://", "http://");
 
-  const url = new URL(base + "/highlight");
+  const url = new URL("/highlight", HIGHLIGHT_URL);
   const req = https.request(
     {
       hostname: url.hostname,
