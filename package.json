@@ -25,13 +25,13 @@
         {
           "type": "webview",
           "id": "stream-chat-vscode.chat",
-          "name": "💬 Twitch Chat",
+          "name": "💬 Stream Chat VSCode",
           "icon": "icon.png"
         }
       ]
     },
     "configuration": {
-      "title": "Twitch mejudev",
+      "title": "Stream Chat VSCode",
       "properties": {
         "stream-chat-vscode.clientId": {
           "type": "string",
