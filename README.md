@@ -1,4 +1,4 @@
-# Twitch mejudev
+# Stream-chat-vscode
 
 > Multichat de Twitch y Kick integrado en VSCode para streamers de programación.
 
