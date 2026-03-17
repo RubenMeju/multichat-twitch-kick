@@ -1,8 +1,8 @@
 {
   "name": "stream-chat-vscode",
-  "displayName": "Twitch mejudev",
+  "displayName": "Stream Chat VSCode",
   "description": "Chat y viewers de Twitch integrado en VSCode",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "publisher": "mejudev",
   "icon": "icon.png",
   "engines": {
